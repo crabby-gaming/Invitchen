@@ -4,7 +4,7 @@ import tkinter as tk
 from tkinter import * 
 from tkinter.font import Font
 
-db = mysql.connector.connect( host ="localhost", user="root", passwd ="placeholder", database = "IAdatabase")
+db = mysql.connector.connect( host ="localhost", user="root", passwd ="placeholder", database = "placeholder")
 
 def destroy_previous_page():
     # Destroy all widgets and frames in the root window
@@ -336,4 +336,5 @@ head_frame.configure(height=50)
 action_frame.pack()
 
 root.mainloop()
+
 db.close()
